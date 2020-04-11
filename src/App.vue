@@ -1,12 +1,24 @@
 <template>
   <v-app>
-    <v-app-bar app color="primary" dark>
-      <div class="d-flex align-center"></div>
+    <!-- TODO: Donate now button, in header social media links, 3 tabs one for pictures one for donations and one to contact us -->
+    <!-- 
+    <v-app-bar app absolute shrink-on-scroll prominent color="#0C2E5F" dark>-->
+    <v-app-bar app color="#0C2E5F" dark shrink-on-scroll prominent>
+      <!-- <div class="d-flex align-center"></div> -->
+      <v-img
+        :src="require('./assets/corona_caveman_challenge.png')"
+        contain
+        height="50"
+        width="50"
+      />
 
       <v-spacer></v-spacer>
+      <v-btn icon medium v-for="(item, index) of socialMedia" v-bind:key="index" :href="item.link">
+        <v-icon>{{ item.icon }}</v-icon>
+      </v-btn>
 
-      <v-btn href="https://github.com/vuetifyjs/vuetify/releases/latest" target="_blank" text>
-        <span class="mr-2">Latest Release</span>
+      <v-btn href="mailto:coronacavemanchallenge@gmail.com" text>
+        <span class="mr-2">Contact Us</span>
         <v-icon>mdi-open-in-new</v-icon>
       </v-btn>
     </v-app-bar>
@@ -37,11 +49,11 @@ export default {
       {
         icon: "mdi-instagram",
         link: ""
-      },
-      {
-        icon: "mdi-youtube",
-        link: ""
       }
+      // {
+      //   icon: "mdi-youtube",
+      //   link: ""
+      // }
     ]
   }),
   mounted() {
