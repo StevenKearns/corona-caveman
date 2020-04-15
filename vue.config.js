@@ -1,3 +1,3 @@
 module.exports = {
-  publicPath: "/corona_caveman/"
+  publicPath: "/corona-caveman/"
 }

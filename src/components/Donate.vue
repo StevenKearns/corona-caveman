@@ -12,15 +12,6 @@
 export default {
   name: "Donate",
 
-  data: () => ({
-    socialMedia: [
-      // Icon here refers to the name of Material Design Icons
-      {
-        icon: "mdi-twitter",
-        link: "https://twitter.com/corona_caveman"
-      }
-    ]
-  }),
   mounted() {
     let gl = document.createElement("script");
     gl.src =
