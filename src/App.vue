@@ -18,9 +18,36 @@
 
       <v-spacer />
 
-      <v-btn outlined large color="white">About us</v-btn>
-      <v-btn outlined large color="white">Cave wall of honor</v-btn>
-      <v-btn outlined large color="white">Donate</v-btn>
+      <v-btn
+        outlined
+        large
+        color="white"
+        @click="
+          $router.push({
+            name: 'About'
+          })
+        "
+      >About us</v-btn>
+      <v-btn
+        outlined
+        large
+        color="white"
+        @click="
+          $router.push({
+            name: 'CaveWall'
+          })
+        "
+      >Cave wall of honor</v-btn>
+      <v-btn
+        outlined
+        large
+        color="white"
+        @click="
+          $router.push({
+            name: 'Donate'
+          })
+        "
+      >Donate</v-btn>
 
       <v-spacer />
 
