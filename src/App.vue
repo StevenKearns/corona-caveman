@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <!-- TODO: Donate now button, in header social media links, 3 tabs one for pictures one for donations and one to contact us -->
+    <!-- TODO: 3 tabs one for pictures one for donations and one to contact us -->
     <!-- <v-app-bar app color="#0C2E5F" dark shrink-on-scroll prominent>-->
     <v-app-bar app color="#0C2E5F" dark>
       <!-- <div class="d-flex align-center"></div> -->
@@ -15,22 +15,51 @@
           aspect-ratio="1"
         />
       </div>
-
-      <v-spacer />
-
-      <v-btn
-        v-for="page in pageRoutes"
-        v-bind:key="page.route"
-        outlined
-        large
-        color="white"
-        class="mx-1"
-        @click="
-          $router.push({
-            name: page.route
-          })
-        "
-      >{{ page.text }}</v-btn>
+      <v-menu v-if="mobileScreen" transition="slide-y-transition" offset-y bottom>
+        <template v-slot:activator="{ on }">
+          <v-btn icon medium v-on="on">
+            <v-icon>mdi-chevron-down</v-icon>
+          </v-btn>
+        </template>
+        <v-list>
+          <v-list-item
+            v-for="page in pageRoutes"
+            v-bind:key="page.route"
+            @click="
+              $router.push({
+                name: page.route
+              })
+            "
+          >
+            <v-list-item-title>{{ page.text }}</v-list-item-title>
+          </v-list-item>
+        </v-list>
+      </v-menu>
+      <div v-else>
+        <v-btn
+          v-for="page in pageRoutes.slice(0, 2)"
+          v-bind:key="page.route"
+          outlined
+          large
+          color="white"
+          class="mx-1"
+          @click="
+            $router.push({
+              name: page.route
+            })
+          "
+        >{{ page.text }}</v-btn>
+        <v-btn
+          large
+          color="#996515"
+          class="mx-1"
+          @click="
+            $router.push({
+              name: 'Donate'
+            })
+          "
+        >Donate</v-btn>
+      </div>
 
       <v-spacer />
 
@@ -38,9 +67,11 @@
         <v-icon>{{ item.icon }}</v-icon>
       </v-btn>
 
-      <v-btn class="my-1" href="mailto:coronacavemanchallenge@gmail.com" text>
+      <v-btn v-if="mediumScreen" class="my-1" href="mailto:coronacavemanchallenge@gmail.com" text>
         <span class="mr-2">Contact Us</span>
-        <v-icon>mdi-open-in-new</v-icon>
+      </v-btn>
+      <v-btn v-else icon medium href="mailto:coronacavemanchallenge@gmail.com">
+        <v-icon>mdi-email</v-icon>
       </v-btn>
     </v-app-bar>
     <v-content>
@@ -59,15 +90,15 @@ export default {
       {
         icon: "mdi-twitter",
         link: "https://twitter.com/corona_caveman"
+      },
+      {
+        icon: "mdi-facebook",
+        link: "https://www.facebook.com/harry.thecaveman"
+      },
+      {
+        icon: "mdi-instagram",
+        link: "https://www.instagram.com/corona.caveman.challenge/"
       }
-      // {
-      //   icon: "mdi-facebook",
-      //   link: ""
-      // },
-      // {
-      //   icon: "mdi-instagram",
-      //   link: ""
-      // }
       // {
       //   icon: "mdi-youtube",
       //   link: ""
