@@ -19,17 +19,18 @@
       <v-spacer />
 
       <v-btn
-        v-for="route in pageRoutes"
-        v-bind:key="route.name"
+        v-for="page in pageRoutes"
+        v-bind:key="page.route"
         outlined
         large
         color="white"
+        class="mx-1"
         @click="
           $router.push({
-            name: route.name
+            name: page.route
           })
         "
-      >{{ route.name }}</v-btn>
+      >{{ page.text }}</v-btn>
 
       <v-spacer />
 
@@ -76,17 +77,25 @@ export default {
       // Icon here refers to the name of Material Design Icons
       {
         text: "About Us",
-        name: "About"
+        route: "About"
       },
       {
-        text: "Cave Wall of Honor",
-        name: "CaveWall"
+        text: "CaveWall of Honor",
+        route: "CaveWall"
       },
       {
         text: "Donate",
-        name: "Donate"
+        route: "Donate"
       }
     ]
-  })
+  }),
+  computed: {
+    mobileScreen() {
+      return this.$vuetify.breakpoint.xs;
+    },
+    mediumScreen() {
+      return this.$vuetify.breakpoint.mdAndUp;
+    }
+  }
 };
 </script>
