@@ -19,35 +19,17 @@
       <v-spacer />
 
       <v-btn
+        v-for="route in pageRoutes"
+        v-bind:key="route.name"
         outlined
         large
         color="white"
         @click="
           $router.push({
-            name: 'About'
+            name: route.name
           })
         "
-      >About us</v-btn>
-      <v-btn
-        outlined
-        large
-        color="white"
-        @click="
-          $router.push({
-            name: 'CaveWall'
-          })
-        "
-      >Cave wall of honor</v-btn>
-      <v-btn
-        outlined
-        large
-        color="white"
-        @click="
-          $router.push({
-            name: 'Donate'
-          })
-        "
-      >Donate</v-btn>
+      >{{ route.name }}</v-btn>
 
       <v-spacer />
 
@@ -72,7 +54,7 @@ export default {
 
   data: () => ({
     socialMedia: [
-      // Icon here refers to the name of Material Design Icons
+      // Icon refers to the name of Material Design Icons
       {
         icon: "mdi-twitter",
         link: "https://twitter.com/corona_caveman"
@@ -89,6 +71,21 @@ export default {
       //   icon: "mdi-youtube",
       //   link: ""
       // }
+    ],
+    pageRoutes: [
+      // Icon here refers to the name of Material Design Icons
+      {
+        text: "About Us",
+        name: "About"
+      },
+      {
+        text: "Cave Wall of Honor",
+        name: "CaveWall"
+      },
+      {
+        text: "Donate",
+        name: "Donate"
+      }
     ]
   })
 };
