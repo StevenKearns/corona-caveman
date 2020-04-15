@@ -33,12 +33,9 @@
         <v-icon>mdi-open-in-new</v-icon>
       </v-btn>
     </v-app-bar>
-
-    <div
-      data-widget-src="https://secure.givelively.org/donate/blessings-in-a-backpack-inc/corona-caveman-challenge?ref=sd_widget"
-      id="give-lively-widget"
-      class="gl-branded-donation-widget"
-    ></div>
+    <v-content>
+      <router-view></router-view>
+    </v-content>
   </v-app>
 </template>
 
@@ -66,12 +63,6 @@ export default {
       //   link: ""
       // }
     ]
-  }),
-  mounted() {
-    let gl = document.createElement("script");
-    gl.src =
-      "https://secure.givelively.org/widgets/branded_donation/blessings-in-a-backpack-inc/corona-caveman-challenge.js";
-    document.getElementsByTagName("head")[0].appendChild(gl);
-  }
+  })
 };
 </script>
