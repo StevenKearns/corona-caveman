@@ -7,6 +7,7 @@ import CaveWall from "@/components/CaveWall"
 Vue.use(VueRouter)
 export default new VueRouter({
   mode: "history",
+  base: "/corona-caveman/",
   routes: [
     {
       path: "/",
