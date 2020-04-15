@@ -97,7 +97,7 @@ export default {
       },
       {
         icon: "mdi-instagram",
-        link: "https://www.instagram.com/corona.caveman.challenge/"
+        link: "https://www.instagram.com/corona.caveman/"
       }
       // {
       //   icon: "mdi-youtube",

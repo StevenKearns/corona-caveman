@@ -8,15 +8,24 @@
           our social media platforms, or to the email located in the “Contact
           Us” button to be featured on the prestigious CaveWall of Honor!
         </section>
+        <v-col v-for="(person, index) of people" v-bind:key="index" cols="12" sm="4" md="3" my-1>
+          <Headshot :person="person"></Headshot>
+        </v-col>
       </v-row>
     </v-container>
   </v-app>
 </template>
 
 <script>
+import Headshot from "./Headshot";
+import { people } from "../cavewallPictures.js";
 export default {
   name: "CaveWall",
-
-  data: () => ({})
+  data: () => ({
+    people: people
+  }),
+  components: {
+    Headshot
+  }
 };
 </script>

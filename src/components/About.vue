@@ -10,7 +10,7 @@
           height="500"
           aspect-ratio="1"
         />
-        <section class="headline">
+        <section class="headline my-5">
           100% of the money we raise goes directly to the Blessings in a
           Backpack charity - a non profit organization that provides good to
           elementary school children across America who might otherwise go
@@ -22,6 +22,12 @@
           Why do we do it? To feed the kids, and ensure that childhood hunger
           becomes a thing of the past.
         </section>
+        <v-img
+          alt="Blessings in a Backpack Logo"
+          :src="require('../assets/Blessings_in_a_Backpack_logo.png')"
+          contain
+          height="200"
+        />
       </v-row>
     </v-container>
   </v-app>
