@@ -6,8 +6,11 @@
         <v-container>
           <section class="headline">
             Be sure to submit a picture with your caveman face on to any one of
-            our social media platforms, or to the email located in the “Contact
-            Us” button to be featured on the prestigious CaveWall of Honor!
+            our social media platforms or
+            <a
+              href="mailto:coronacavemanchallenge@gmail.com"
+            >contact us</a> to
+            be featured on the prestigious CaveWall of Honor!
           </section>
         </v-container>
         <v-col v-for="(person, index) of people" v-bind:key="index" cols="12" sm="4" md="3" my-1>

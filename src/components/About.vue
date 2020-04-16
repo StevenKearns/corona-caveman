@@ -27,12 +27,14 @@
           />
         </v-col>
         <v-col cols="6">
-          <v-img
-            alt="Blessings in a Backpack Logo"
-            :src="require('../assets/Blessings_in_a_Backpack_logo.png')"
-            contain
-            height="300"
-          />
+          <a href="https://www.blessingsinabackpack.org/">
+            <v-img
+              alt="Blessings in a Backpack Logo"
+              :src="require('../assets/Blessings_in_a_Backpack_logo.png')"
+              contain
+              height="300"
+            />
+          </a>
         </v-col>
       </v-row>
     </v-container>
