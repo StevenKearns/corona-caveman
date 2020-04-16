@@ -13,6 +13,11 @@
           contain
           width="50"
           aspect-ratio="1"
+          @click="
+            $router.push({
+              name: 'Donate'
+            })
+          "
         />
       </div>
       <v-menu v-if="mobileScreen" transition="slide-y-transition" offset-y bottom>

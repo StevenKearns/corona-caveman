@@ -20,15 +20,15 @@ export const people = [
     title: "Graphic Lead"
   },
   {
-    name: "Jeff",
+    name: "Jeff from Yardley, PA",
     image: require("./assets/headshots/Jeff.jpeg")
   },
   {
-    name: "Harry",
+    name: "Harry from Dubois, PA",
     image: require("./assets/headshots/Harry.jpg")
   },
   {
-    name: "Victor",
+    name: "Victor from Alexandria, VA",
     image: require("./assets/headshots/Victor.jpeg")
   }
 ]
