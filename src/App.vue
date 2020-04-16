@@ -98,7 +98,7 @@ export default {
       },
       {
         icon: "mdi-facebook",
-        link: "https://www.facebook.com/harry.thecaveman"
+        link: "https://www.facebook.com/corona.caveman"
       },
       {
         icon: "mdi-instagram",

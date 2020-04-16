@@ -9,16 +9,29 @@
             <a
               href="https://www.blessingsinabackpack.org/"
             >Blessings in a Backpack</a>
-            - a nonprofit organization that provides food to elementary school
+            - a non profit organization that provides food to elementary school
             children across America who might otherwise go hungry. We are a
-            group of college students looking to make a difference in the
-            difficult pandemic we currently live in, and bring people together
-            during these times of isolation. With quarantine in effect it can be
-            difficult to reach out, so we created a platform to help feed the
+            group of friends looking to make a difference in the difficult
+            pandemic we currently live in, and bring people together during
+            these times of isolation. With quarantine in effect it can be
+            difficult to reach out, so we created a platform to help feed
             children from the comfort and safety of your own home. Why do we do
             it? To feed the kids, and ensure that childhood hunger becomes a
             thing of the past.
           </section>
+
+          <v-row align="start" justify="center">
+            <v-col
+              v-for="(person, index) of contributors"
+              v-bind:key="index"
+              cols="12"
+              sm="4"
+              md="3"
+              my-1
+            >
+              <Headshot :person="person"></Headshot>
+            </v-col>
+          </v-row>
         </v-container>
         <v-col cols="6">
           <v-img
@@ -45,9 +58,16 @@
 </template>
 
 <script>
+import Headshot from "./Headshot";
+import { contributors } from "../cavewallPictures.js";
 export default {
   name: "About",
 
-  data: () => ({})
+  data: () => ({
+    contributors: contributors
+  }),
+  components: {
+    Headshot
+  }
 };
 </script>

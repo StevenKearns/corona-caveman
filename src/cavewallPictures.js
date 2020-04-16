@@ -1,24 +1,37 @@
-export const people = [
+export const contributors = [
   {
-    name: "Steven Budzinski",
+    name: "Steve",
     image: require("./assets/headshots/Big_Steve.jpg"),
     title: "Project Manager"
   },
   {
-    name: "Steven Kearns",
+    name: "Steve",
     image: require("./assets/headshots/Little_Steve.jpg"),
     title: "Website Lead"
   },
+  // {
+  //   name: "Sam",
+  //   image: require("./assets/headshots/Little_Steve.jpg"),
+  //   title: "Graphics Lead"
+  // },
   {
-    name: "Pat Walsh",
+    name: "Pat",
     image: require("./assets/headshots/Pat.jpeg"),
     title: "Creative Lead"
   },
   {
-    name: "Leo Hampel",
+    name: "Leo",
     image: require("./assets/headshots/Leo.jpeg"),
-    title: "Graphic Lead"
-  },
+    title: "Marketing Lead"
+  }
+  // {
+  //   name: "Cindy",
+  //   image: require("./assets/headshots/Leo.jpeg"),
+  //   title: "Social Media Lead"
+  // }
+]
+
+export const people = [
   {
     name: "Jeff from Yardley, PA",
     image: require("./assets/headshots/Jeff.jpeg")
