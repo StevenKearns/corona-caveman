@@ -2,9 +2,9 @@
   <v-app>
     <v-container>
       <v-row align="end" justify="center">
-        <h1 class="display-3 font-weight-bold my-5">About Us</h1>
+        <h1 class="display-3 font-weight-bold my-5 text-center">About Us</h1>
         <v-container>
-          <section class="headline my-5">
+          <section class="headline">
             100% of the money we raise goes directly to
             <a
               href="https://www.blessingsinabackpack.org/"
@@ -16,19 +16,7 @@
             and safety of our own homes. Why do we do it? To feed the kids and
             ensure that childhood hunger becomes a thing of the past.
           </section>
-
-          <v-row align="start" justify="center">
-            <v-col
-              v-for="(person, index) of contributors"
-              v-bind:key="index"
-              cols="12"
-              sm="4"
-              md="3"
-              my-1
-            >
-              <Headshot :person="person"></Headshot>
-            </v-col>
-          </v-row>
+          <PersonCategory :people="contributors"></PersonCategory>
         </v-container>
         <v-col cols="6">
           <v-img
@@ -55,7 +43,7 @@
 </template>
 
 <script>
-import Headshot from "./Headshot";
+import PersonCategory from "./PersonCategory";
 import { contributors } from "../cavewallPictures.js";
 export default {
   name: "About",
@@ -64,7 +52,7 @@ export default {
     contributors: contributors
   }),
   components: {
-    Headshot
+    PersonCategory
   }
 };
 </script>
