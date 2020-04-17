@@ -8,16 +8,13 @@
             100% of the money we raise goes directly to
             <a
               href="https://www.blessingsinabackpack.org/"
-            >Blessings in a Backpack</a>
-            - a non profit organization that provides food to elementary school
+            >Blessings in a Backpack</a>, a nonprofit organization that provides food to elementary school
             children across America who might otherwise go hungry. We are a
-            group of friends looking to make a difference in the difficult
-            pandemic we currently live in, and bring people together during
-            these times of isolation. With quarantine in effect it can be
-            difficult to reach out, so we created a platform to help feed
-            children from the comfort and safety of your own home. Why do we do
-            it? To feed the kids, and ensure that childhood hunger becomes a
-            thing of the past.
+            group of friends looking to make a difference during difficult times
+            and bring people together while in isolation. With these goals in
+            mind, we created a platform to help feed children from the comfort
+            and safety of our own homes. Why do we do it? To feed the kids and
+            ensure that childhood hunger becomes a thing of the past.
           </section>
 
           <v-row align="start" justify="center">
