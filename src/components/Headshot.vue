@@ -18,8 +18,8 @@
         >
           <v-icon>mdi-linkedin</v-icon>
         </v-btn>
-        <div class="font-weight-light title mb-2">{{ person.name }}</div>
-        <h3 v-if="person.title" class="font-weight-light blue--text">{{ person.title }}</h3>
+        <div class="font-weight-light title">{{ person.name }}</div>
+        <h3 v-if="person.title" class="font-weight-light blue--text mt-2">{{ person.title }}</h3>
       </v-card-text>
     </v-card>
   </span>
