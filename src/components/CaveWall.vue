@@ -15,6 +15,10 @@
       </v-container>
       <PersonCategory :people="topDonors" title="Top Donors"></PersonCategory>
       <PersonCategory :people="superlatives" title="Superlatives"></PersonCategory>
+      <h3 class="display-0 font-weight-regular text-center mb-4">
+        Think you can beat them? Be sure to post a picture and follow the entry
+        rules above to take the throne!
+      </h3>
       <PersonCategory :people="featured" title="Featured Cavepeople"></PersonCategory>
     </v-container>
   </v-app>
