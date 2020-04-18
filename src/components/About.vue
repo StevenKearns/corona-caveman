@@ -16,7 +16,7 @@
             and safety of our own homes. Why do we do it? To feed the kids and
             ensure that childhood hunger becomes a thing of the past.
           </section>
-          <PersonCategory :people="contributors"></PersonCategory>
+          <PersonCategory class="my-6" :people="contributors"></PersonCategory>
         </v-container>
         <v-col cols="6">
           <v-img

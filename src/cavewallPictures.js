@@ -46,12 +46,12 @@ export const superlatives = [
   {
     name: "Toni from Ambler, PA",
     image: require("./assets/headshots/TonifromAmbler,PA.jpg"),
-    title: "Longest Hair"
+    award: "Longest Hair"
   },
   {
     name: "Dan from Pittsburgh, PA",
     image: require("./assets/headshots/DanfromPittsburgh.jpg"),
-    title: "Longest Beard"
+    award: "Longest Beard"
   }
 ]
 
@@ -59,11 +59,11 @@ export const featured = [
   {
     name: "Harry from Dubois, PA",
     image: require("./assets/headshots/Harry.jpg"),
-    title: "Caveman of the Day"
+    award: "Caveman of the Day"
   },
   {
     name: "Jill from Landsdale, PA",
-    image: require("./assets/headshots/Harry.jpg"),
-    title: "Cavewoman of the Day"
+    image: require("./assets/headshots/JillfromLandsdale,PA.jpg"),
+    award: "Cavewoman of the Day"
   }
 ]
