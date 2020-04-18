@@ -20,25 +20,29 @@ export const contributors = [
     title: "Creative Lead"
   },
   {
+    name: "Cindy",
+    image: require("./assets/headshots/CindySocialMediaCoordinator.jpg"),
+    title: "Social Media Lead"
+  },
+  {
     name: "Leo",
     image: require("./assets/headshots/Leo.jpeg"),
     title: "Marketing Lead"
   }
-  // {
-  //   name: "Cindy",
-  //   image: require("./assets/headshots/Leo.jpeg"),
-  //   title: "Social Media Lead"
-  // }
 ]
 
 export const topDonors = [
+  {
+    name: "Newman Catholic of Penn State",
+    image: require("./assets/headshots/NewmanLogo.png")
+  },
   {
     name: "Sharon from Yardley, PA",
     image: require("./assets/headshots/SharonfromYardley,PA.jpg")
   },
   {
-    name: "Newman Catholic of Penn State",
-    image: require("./assets/headshots/NewmanLogo.png")
+    name: "Alec from Yardley, PA",
+    image: require("./assets/headshots/AlecfromYardley.jpg")
   }
 ]
 
