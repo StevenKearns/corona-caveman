@@ -53,8 +53,8 @@ export const superlatives = [
     award: "Longest Hair"
   },
   {
-    name: "Dan from Pittsburgh, PA",
-    image: require("./assets/headshots/DanfromPittsburgh.jpg"),
+    name: "Ninad from Yardley, PA",
+    image: require("./assets/headshots/NinadfromYardley,PA.jpg"),
     award: "Longest Beard"
   }
 ]
