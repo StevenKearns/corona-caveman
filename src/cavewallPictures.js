@@ -33,23 +33,23 @@ export const contributors = [
 
 export const topDonors = [
   {
+    name: "Matt from Phoenixville, PA",
+    image: require("./assets/headshots/MattfromPhoenixville,PA.jpg")
+  },
+  {
     name: "Newman Catholic of Penn State",
     image: require("./assets/headshots/NewmanLogo.png")
   },
   {
-    name: "Sharon from Yardley, PA",
-    image: require("./assets/headshots/SharonfromYardley,PA.jpg")
-  },
-  {
-    name: "Alec from Yardley, PA",
-    image: require("./assets/headshots/AlecfromYardley.jpg")
+    name: "Noah from Raleigh, NC",
+    image: require("./assets/headshots/NoahfromRaleigh,NC.jpg")
   }
 ]
 
 export const superlatives = [
   {
-    name: "Toni from Ambler, PA",
-    image: require("./assets/headshots/TonifromAmbler,PA.jpg"),
+    name: "Anna from Yardley, PA",
+    image: require("./assets/headshots/AnnafromYardley.jpg"),
     award: "Longest Hair"
   },
   {
@@ -61,13 +61,13 @@ export const superlatives = [
 
 export const featured = [
   {
-    name: "Harry from Dubois, PA",
-    image: require("./assets/headshots/Harry.jpg"),
+    name: "Hayden from Yardley, PA",
+    image: require("./assets/headshots/HaydenfromYardley.jpg"),
     award: "Caveman of the Day"
   },
   {
-    name: "Jill from Landsdale, PA",
-    image: require("./assets/headshots/JillfromLandsdale,PA.jpg"),
+    name: "Jeff from Yardley, PA",
+    image: require("./assets/headshots/JefffromYardley.jpg"),
     award: "Cavewoman of the Day"
   }
 ]
