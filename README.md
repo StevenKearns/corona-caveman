@@ -6,7 +6,7 @@ I built this website with the intent of creating a template for Give Lively widg
 
 100% of the money we raise goes directly to Blessings in a Backpack, a nonprofit organization that provides food to elementary school children across America who might otherwise go hungry. We are a group of friends looking to make a difference during difficult times and bring people together while in isolation. With these goals in mind, we created a platform to help feed children from the comfort and safety of our own homes. Why do we do it? To feed the kids and ensure that childhood hunger becomes a thing of the past. 
 
-Access at https://coronacaveman.org/
+Access at https://stevenkearns.github.io/corona-caveman/
 
 ## Project setup
 ```
