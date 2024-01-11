@@ -33,7 +33,7 @@ export const topDonors = [
   },
   {
     name: "Newman Catholic of Penn State",
-    image: require("./assets/headshots/NewmanLogo.png")
+    image: require("./assets/logos/penn-state-newman.png")
   },
   {
     name: "Noah from Raleigh, NC",

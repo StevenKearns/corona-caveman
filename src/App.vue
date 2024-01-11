@@ -9,7 +9,7 @@
         <v-img
           alt="Corona Caveman"
           class="mr-2"
-          :src="require('./assets/corona_caveman_challenge.png')"
+          :src="require('./assets/logos/corona-caveman-challenge.png')"
           contain
           width="50"
           aspect-ratio="1"

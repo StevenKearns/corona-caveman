@@ -21,7 +21,7 @@
         <v-col cols="6">
           <v-img
             alt="Corona Caveman"
-            :src="require('../assets/corona_caveman_challenge.png')"
+              :src="require('../assets/logos/corona-caveman-challenge.png')"
             contain
             height="300"
             aspect-ratio="1"
@@ -31,7 +31,7 @@
           <a href="https://www.blessingsinabackpack.org/">
             <v-img
               alt="Blessings in a Backpack Logo"
-              :src="require('../assets/Blessings_in_a_Backpack_logo.png')"
+                  :src="require('../assets/logos/blessings-in-a-backpack.png')"
               contain
               height="300"
             />
